@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: beige; 
+            }
+            #id1{
+                color: rgb(164, 179, 37);
+            }
+            #id2{
+                color: rgb(164, 179, 37);
+            }
+            #output{
+                font-weight: bolder;
+                color: rgb(100, 94, 10);
+            }
+        </style>
+    </head>
+    <body>
+        <p>First Value</p>
+        <input id="id1" type="text">
+        <p>Second Value</p>
+        <input id="id2" type="text">
+        <p>Operations:</p>
+        <div>
+            <button onclick="add()">+</button>
+            <button onclick="subtract()">-</button>
+            <button onclick="multiply()">*</button>
+        </div>
+        <p>Result</p>
+        <p id="output"></p>
+        <script>
+            function add(){
+                let inputVal1 = document.getElementById("id1");
+                let inputVal2 = document.getElementById("id2");
+                let sum = Number(inputVal1.value) + Number(inputVal2.value);
+                document.getElementById('output').innerHTML = sum;
+            }
+
+            function subtract(){
+                let inputVal1 = document.getElementById("id1");
+                let inputVal2 = document.getElementById("id2");
+                let difference = Number(inputVal1.value) - Number(inputVal2.value);
+                document.getElementById('output').innerHTML = difference;
+               
+            }
+            function multiply(){
+                let inputVal1 = document.getElementById("id1");
+                let inputVal2 = document.getElementById("id2");
+                let mult = Number(inputVal1.value) * Number(inputVal2.value);
+                document.getElementById('output').innerHTML = mult;
+                
+            }
+        </script>
+         <p>
+            <a href="https://validator.w3.org/check/referer">Validate</a>
+            </p>
+    </body>
+   
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: rgba(247, 224, 245, 0.596);
+                color:rgb(95, 31, 69);
+            }
+            #Id{
+                background-color: rgba(190, 113, 190, 0.897);
+                color:rgba(252, 247, 250, 0.877)
+            }
+            #Id2{
+                background-color: rgba(190, 113, 190, 0.897);
+                color:rgba(246, 242, 245, 0.877)
+
+            }
+        </style>
+    </head>
+    <body>
+        <p>Input</p>
+        <input Id="Id" type="text">
+        <p>Output</p>
+        <textarea name="" id="Id2" cols="20" rows="6"></textarea>
+        <div>
+            <button onclick="addText()">Click to add</button>
+        </div>
+        <script>
+            function addText(){
+                let inputText = document.getElementById("Id");
+                let outputText = document.getElementById("Id2");
+                outputText.value = inputText.value;
+                inputText.value = "";
+            }
+        </script>
+         <p>
+            <a href="https://validator.w3.org/check/referer">Validate</a>
+            </p>
+    </body>
+</html>

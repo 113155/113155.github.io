@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <b><h2>Inventory</h2></b>
+        <style>
+            body{
+                background-color: rgba(233, 173, 20, 0.308);
+            }
+            #click{
+                background-color: rgba(133, 123, 36, 0.781);
+                margin-left: 310px;
+                color: honeydew;
+            }
+            .col1{padding-right: 200px;}
+            .col2{padding-right: 200px;}
+            .col3{padding-right: 200px;}
+            #name{padding-right: 500px;}
+            #category{padding-right: 500px;}
+            #quantity{padding-right: 500px;}
+            .row0{background-color:rgba(133, 123, 36, 0.781) ;}
+            table{border-style: solid;}
+        </style>
+    </head>
+    <body>
+        <p>Item Name:</p>
+        <input id="name" type="text" >
+        <p>Item Category:</p>
+        <input id="category" type="text">
+        <p>Quantity:</p>
+        <input id="quantity" type="text" >
+        <br><br>
+        <div>
+            <button id="click" onclick="addItem()">Add</button>
+        </div>
+        <br>
+        <table id="tableId">        
+            <tr class="row0">
+                <th class="col1">Product Name</th>
+                <th class="col2">Category</th>
+                <th class="col3">Quantity</th>
+            </tr>
+            <tr>
+                <td>Computers</td>
+                <td class="col2">Digital</td>
+                <td class="col3">100</td>
+            </tr>
+            <tr>
+                <td class="col1">Magazines</td>
+                <td class="col2">Convenience</td>
+                <td class="col3">1000</td>
+            </tr>
+            <tr>
+                <td class="col1">Books</td>
+                <td class="col2">Education</td>
+                <td class="col3">20</td>
+            </tr>
+            
+        </table>
+        <script>
+            function addItem(){
+                let table = document.getElementById("tableId");
+                let names = document.getElementById("name");
+                let category = document.getElementById("category");
+                let quantity = document.getElementById("quantity");
+                let tr = document.createElement("tr");
+                table.append(tr);
+                let td1 = document.createElement("td");
+                tr.append(td1);
+                td1.innerText = names.value;
+                td1.style.paddingRight = "200px";
+
+                let td2 = document.createElement("td");
+                tr.append(td2);
+                td2.innerText = category.value;
+                td2.style.paddingRight = "200px";
+
+                let td3 = document.createElement("td");
+                tr.append(td3);
+                td3.innerText = quantity.value;
+                td3.style.paddingRight = "200px";
+
+
+                
+            }
+        </script>
+         <p>
+            <a href="https://validator.w3.org/check/referer">Validate</a>
+            </p>
+    </body>
+</html>
