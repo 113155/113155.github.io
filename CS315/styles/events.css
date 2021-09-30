@@ -1,0 +1,23 @@
+
+body{
+
+    background-color: rgba(233, 173, 20, 0.308);
+}
+th,td{
+    padding-right: 100px;
+}
+table, tr, td{
+    border: 2px solid;
+    border-color:rgba(133, 123, 36, 0.781);
+    border-collapse: collapse;
+}
+input{padding-right: 500px;}
+
+#clickAdd{
+    background-color: rgba(133, 123, 36, 0.781);
+    margin-left: 310px;
+    color: honeydew;
+}
+
+
+.row0{background-color:rgba(133, 123, 36, 0.781) ;}
