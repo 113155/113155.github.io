@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            background-color: rgba(12, 11, 12, 0.829);
+        }
+
+        .gridContainer {
+            /* border: 3px solid hotpink; */
+            display: grid;
+            grid-template-columns: 1fr 1fr 0.6fr;
+            padding: 80px;
+            padding-bottom: 30px;
+            padding-top: 60px;
+            gap: 20px;
+
+        }
+
+        .flexContainer {
+            /* border: 3px solid yellow; */
+            display: flex;
+            /* margin-top: 40px; */
+            justify-content: space-between;
+        }
+
+        .innerFlex {
+            display: flex;
+            /* border:1px solid blue; */
+            width: 40%;
+            justify-content: space-around;
+            padding-left: 60px;
+        }
+
+        .roundBox {
+            display: flex;
+            border: 1px solid gray;
+            background-color: rgba(128, 128, 128, 0.705);
+            border-radius: 50px;
+            padding: px;
+            justify-content: space-between;
+            
+
+        }
+
+        .label {
+            background-color: orange;
+            border-radius: 50px;
+            padding: 5px 20px;
+        }
+
+        label,
+        p,
+        h3 {
+            color: white;
+        }
+
+        .label1 {
+            border-radius: 50px;
+            padding: 5px
+        }
+
+        .tweets {
+            display: grid;
+            grid-template-columns: 1fr 6fr;
+        }
+        .tweets>p{
+            font-style: italic;
+        }
+        .instagram{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            /* border: 3px solid green;  */
+            height:80%;
+            
+            
+        }
+        .image{
+            /* border: 3px solid;  */
+            width:100%;
+            height:100%;
+            object-fit: cover;
+        }
+       
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="gridContainer">
+            <div class="box box1">
+                <h3>About Us</h3>
+                <br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum natus doloribus
+                    perferendis dolore harum accusantium ullam facere maiores blanditiis quibusdam, molestias
+                    dolorem, ad sequi vero dignissimos fugiat ducimus laborum esse!
+                </p>
+                <br>
+                <p>
+                    <img src="../CS315/images/contact icon.png" style="width:5%;">
+                    <label> +1 291 3912 329</label>
+                </p>
+                <p>
+                    <img src="../CS315/images/email us icon.png" style="width:10%;">
+                    <label>info@gmail.com</label>
+                </p>
+                <br>
+                <div class="roundBox">
+                    <label class="label1">Enter your e-mail</label>
+                    <label class="label">Send</label>
+                </div>
+
+            </div>
+            <div class="box">
+                <h3>Latest Tweet</h3>
+                <div class="tweets">
+                    <p>
+                        <img src="../CS315/images/twitter icon.png" style="width:50%">
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus soluta
+                        reiciendis impedit ratione quo quibusdam, explicabo eos, odit rem sed amet.
+                        Odio ducimus recusandae perspiciatis pariatur molestias culpa dignissimos illo!
+                    </p>
+
+                    <p>
+                        <img src="../CS315/images/twitter icon.png" style="width:50%">
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus soluta
+                        reiciendis impedit ratione quo quibusdam, explicabo eos, odit rem sed amet.
+                        Odio ducimus recusandae perspiciatis pariatur molestias culpa dignissimos illo!
+                    </p>
+
+                    <p>
+                        <img src="../CS315/images/twitter icon.png" style="width:50%">
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus soluta
+                        reiciendis impedit ratione quo quibusdam, explicabo eos, odit rem sed amet.
+                        Odio ducimus recusandae perspiciatis pariatur molestias culpa dignissimos illo!
+                    </p>
+                </div>
+
+            </div>
+            <div class="box">
+                <h3>Instagram</h3>
+                <div class="instagram">
+                    <img src="../CS315/images/image-2.jpg" class="image">
+                    <img src="../CS315/images/image-5.jpg" class="image">
+                    <img src="../CS315/images/image-12.jpg" class="image">
+                    <img src="../CS315/images/image-6.jpg" class="image">
+                </div>
+            </div>
+
+        </div>
+        <p> <hr style="margin:0px 80px"> </p>
+        <div class="flexContainer">
+            <div class="innerFlex">
+                <p>Home</p>
+                <p>About</p>
+                <p>Our works</p>
+                <p>Services</p>
+                <p>Blog</p>
+                <p>Contacts</p>
+            </div>
+            <p style="padding-right: 100px;">Colorlib</p>
+        </div>
+    </div>
+    <p>
+        <a href="https://validator.w3.org/check/referer">Validate</a>
+        </p>
+</body>
+
+</html>
